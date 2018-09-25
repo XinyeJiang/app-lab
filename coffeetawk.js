@@ -1,6 +1,6 @@
 // CoffeeTawk - by Xinye Jiang - applab,lab1,2018
 
-Challenge 1
+//Challenge 1
     1. Larger demand in Shanghai than New York.
     2. The lines are long
     2. takes a minute or more  just to take an order
@@ -13,12 +13,12 @@ Challenge 1
     9. There are still a lot of people that just stand at the register asking questions and holding up the line.
     10. Losing customers who just want to walk in, grab their drinks and go.
 
-Challenge 2: 
+//Challenge 2: 
     1. Employee training
     2. Reconsider the space that is being used
     3. Allow pre-ordering and prepare things earlier
 
-Challenge 3:
+//Challenge 3:
 import time
 
 int startTime
