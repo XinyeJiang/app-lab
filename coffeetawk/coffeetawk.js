@@ -1,5 +1,6 @@
 // CoffeeTawk - by Xinye Jiang - applab,lab1,2018
 
+
 //Challenge 1
     1. Larger demand in Shanghai than New York.
     2. The lines are long
