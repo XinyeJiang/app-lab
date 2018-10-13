@@ -2,7 +2,7 @@
 //Index in each array corresponds to the Order Number
 //So the first order is seasonalDrinkNum[0] and numberOfPeopleInOrder[1]
 var seasonalDrinkNum=[0,1,1,4,2,0,1,2,2,4,0,1,1,0,2,1,0,0,2,2]
-var numberOfPeopleInOrder=[1,2,3,5,2,3,2,1,3,6,2,1,3,1,4,2,1,2,1,4]
+var numberOfPeopleInOrder=[0,2,3,5,2,3,2,1,3,6,2,1,3,1,4,2,1,2,1,4]
 
 //Form them into a matrix
 //Data from the first order is now only data[0][0] & data[1][0]
