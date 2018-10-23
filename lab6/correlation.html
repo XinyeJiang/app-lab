@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="correlation.js"></script>
+<style>
+.button3{
+    background-color: orange;
+    width: 40px;
+    height: 30px;
+    
+}
+</style>
+
+</head>
+<body>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+        <script type="text/javascript">
+            let Seasonal = [];
+            let customers = [];
+            const addData = function () {
+                const SeasonalOutput = document.getElementById("box1");
+                const customersOutput = document.getElementById("box2");
+                Seasonal.push(document.getElementById('Seasonal').value);
+                customers.push(document.getElementById('customers').value);
+                SeasonalOutput.innerHTML = Seasonal.join('<br/>');
+                customersOutput.innerHTML = customers.join('<br/>');
+                //clear our input fields
+                document.getElementById('Seasonal').value = "";
+                document.getElementById('customers').value = "";
+                document.getElementById('corellation').innerHTML = getPearsonCorrelation(Seasonal, customers).toString();
+            }
+            const clearData = () => {Seasonal = []; customers=[];}
+        </script>
+<center>
+        <h1>Correlation!</h1>
+<div class="image"><img src="images/image2.png" width="830" height="290"></div> <br>
+
+<form action="/action_page.php">
+    <label for ="display-name">Seasonal Drinks per Order</label>
+    <input id="Seasonal" type="text">
+    <br/>
+    <label for="display-name">Number of Customers</label>
+    <input id="customers" type="text">
+    <br/>
+    <input type=button onclick="addData()" value="Add Variables" />
+        <input type=submit onclick="clearData()" value="Clear Variables" />
+    </form>
+
+
+<br>
+<button onclick="document.getElementById('id01').style.display='block'"  class="button3" style="width:auto;">Calculate</button>
+
+</center>
+
+</body>
+</html>
+
