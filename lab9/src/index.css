@@ -1,0 +1,37 @@
+.app {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+	width: 300px;
+	margin-top: 15px;
+	height: 35px;
+	cursor: pointer;
+	background: #1890ff;
+	border: 1px solid #ddd;
+	color: white;
+	transition: all 0.3s;
+	text-align: center;
+	line-height: 35px;
+}
+.btn:hover {
+	color: #1890ff;
+	border: 1px solid #1890ff;
+	background: white;
+}
+.count {
+	text-align: center;
+	font-size: 72px;
+}
